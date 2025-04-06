@@ -1,0 +1,17 @@
+{
+    "roles": {},
+    "items": {
+        "1": {
+            "name": "VIP Status",
+            "description": "A special status that shows up in your profile",
+            "price": 5000,
+            "type": "status"
+        },
+        "2": {
+            "name": "Custom Command",
+            "description": "Create a custom command that responds with a message of your choice",
+            "price": 10000,
+            "type": "command"
+        }
+    }
+}

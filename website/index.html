@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenShell - Bot de Discord Multifuncional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="ZenShell Logo">
+                <h1>ZenShell</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#comandos">Comandos</a></li>
+                <li><a href="#instalacion">Instalación</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="cta-button">
+                <a href="https://discord.com/oauth2/authorize?client_id=1353078906189647912&scope=bot&permissions=8" target="_blank" class="btn">Invitar al Bot</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>ZenShell Bot</h1>
+            <p>Un bot de Discord todo-en-uno diseñado para transformar tu servidor en una comunidad vibrante y bien gestionada. Con funcionalidades avanzadas de moderación, un sistema de economía completo, reproducción de música, niveles personalizados y mucho más, ZenShell se adapta a las necesidades de cualquier servidor.</p>
+            <div class="hero-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1353078906189647912&scope=bot&permissions=8" target="_blank" class="btn primary">Añadir a Discord</a>
+                <a href="https://github.com/tu-usuario/Bot-Discord" target="_blank" class="btn secondary">Ver en GitHub</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/preview.png" alt="ZenShell Bot Preview">
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="features">
+        <h2>Características Principales</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Moderación</h3>
+                <p>Sistema completo de moderación con comandos para ban, kick, mute, warn y más. Gestión avanzada de roles y sistema anti-spam.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <h3>Economía</h3>
+                <p>Sistema de monedas, tienda, comandos para ganar dinero y sistema de comandos personalizados que los usuarios pueden comprar.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>Música</h3>
+                <p>Reproduce música desde YouTube, controla la cola, ajusta el volumen y busca canciones fácilmente.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Niveles y Estadísticas</h3>
+                <p>Sistema de experiencia, niveles, roles automáticos, logros desbloqueables y perfiles personalizados.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3>Eventos</h3>
+                <p>Organiza sorteos, encuestas y configura recordatorios para mantener activa tu comunidad.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Base de Datos</h3>
+                <p>Integración con Supabase para almacenar datos de usuarios, economía, logros y más de forma segura.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="estadisticas" class="stats">
+        <div class="stat-item">
+            <h3>60+</h3>
+            <p>Comandos</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Disponibilidad</p>
+        </div>
+        <div class="stat-item">
+            <h3>15+</h3>
+            <p>Categorías</p>
+        </div>
+        <div class="stat-item">
+            <h3>Fácil</h3>
+            <p>Configuración</p>
+        </div>
+    </section>
+
+    <section id="comandos" class="commands">
+        <h2>Comandos Principales</h2>
+        <div class="commands-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="moderacion">Moderación</button>
+                <button class="tab-btn" data-tab="economia">Economía</button>
+                <button class="tab-btn" data-tab="musica">Música</button>
+                <button class="tab-btn" data-tab="niveles">Niveles</button>
+                <button class="tab-btn" data-tab="roles">Roles</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="moderacion">
+                    <div class="command-list">
+                        <div class="command-item">
+                            <h4>!ban @usuario [razón]</h4>
+                            <p>Banea a un usuario del servidor</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!kick @usuario [razón]</h4>
+                            <p>Expulsa a un usuario del servidor</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!mute @usuario [duración] [razón]</h4>
+                            <p>Silencia a un usuario por un tiempo determinado</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!warn @usuario [razón]</h4>
+                            <p>Advierte a un usuario</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!unban @usuario [razón]</h4>
+                            <p>Desbanea a un usuario y le envía una invitación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="economia">
+                    <div class="command-list">
+                        <div class="command-item">
+                            <h4>!balance [@usuario]</h4>
+                            <p>Muestra el balance de un usuario</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!work</h4>
+                            <p>Trabaja para ganar monedas</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!daily</h4>
+                            <p>Recibe monedas diarias</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!shop</h4>
+                            <p>Muestra la tienda</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!gamble &lt;cantidad&gt;</h4>
+                            <p>Apuesta monedas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="musica">
+                    <div class="command-list">
+                        <div class="command-item">
+                            <h4>!play &lt;canción&gt;</h4>
+                            <p>Reproduce una canción</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!skip</h4>
+                            <p>Salta a la siguiente canción</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!queue</h4>
+                            <p>Muestra la cola de reproducción</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!volume &lt;1-100&gt;</h4>
+                            <p>Ajusta el volumen</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!stop</h4>
+                            <p>Detiene la reproducción</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="niveles">
+                    <div class="command-list">
+                        <div class="command-item">
+                            <h4>!perfil [@usuario]</h4>
+                            <p>Muestra el perfil de un usuario</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!logros [@usuario]</h4>
+                            <p>Muestra los logros de un usuario</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!top [nivel/xp/monedas/logros]</h4>
+                            <p>Muestra el ranking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="roles">
+                    <div class="command-list">
+                        <div class="command-item">
+                            <h4>!role add @usuario @rol</h4>
+                            <p>Añade un rol a un usuario</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!role remove @usuario @rol</h4>
+                            <p>Quita un rol a un usuario</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!role create nombre color</h4>
+                            <p>Crea un nuevo rol</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!role list</h4>
+                            <p>Lista todos los roles del servidor</p>
+                        </div>
+                        <div class="command-item">
+                            <h4>!autoroles</h4>
+                            <p>Muestra los roles automáticos por nivel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instalacion" class="installation">
+        <h2>Instalación y Configuración</h2>
+        <div class="installation-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Clonar Repositorio</h3>
+                    <div class="code-block">
+                        <code>git clone https://github.com/tu-usuario/Bot-Discord.git</code>
+                        <code>cd Bot-Discord</code>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Instalar Dependencias</h3>
+                    <div class="code-block">
+                        <code>pip install -r requirements.txt</code>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Configurar Variables de Entorno</h3>
+                    <p>Crea un archivo <code>.env</code> con las siguientes variables:</p>
+                    <div class="code-block">
+                        <code>DISCORD_TOKEN=tu_token_de_discord</code>
+                        <code>URL_SUPABASE=tu_url_de_supabase</code>
+                        <code>SUPABASE_KEY=tu_clave_de_supabase</code>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Configurar Base de Datos</h3>
+                    <p>Crea las tablas necesarias en Supabase (ver documentación)</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Iniciar el Bot</h3>
+                    <div class="code-block">
+                        <code>python main.py</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Cómo puedo añadir el bot a mi servidor?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Puedes añadir el bot a tu servidor haciendo clic en el botón "Añadir a Discord" en la parte superior de esta página. Necesitarás tener permisos de administrador en el servidor para poder añadirlo.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿El bot es gratuito?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, ZenShell es completamente gratuito y de código abierto. Puedes usar todas sus funciones sin costo alguno.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Cómo configuro la base de datos?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Necesitas crear una cuenta en Supabase y crear las tablas necesarias. En el README del repositorio encontrarás los scripts SQL para crear todas las tablas requeridas.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Puedo personalizar los comandos?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, al ser de código abierto puedes modificar cualquier parte del bot para adaptarlo a tus necesidades. Además, el bot incluye un sistema de comandos personalizados que los usuarios pueden crear.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Cómo reporto un bug o sugiero una nueva función?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Puedes reportar bugs o sugerir nuevas funciones abriendo un issue en el repositorio de GitHub del proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="ZenShell Logo">
+                <h2>ZenShell</h2>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#comandos">Comandos</a></li>
+                    <li><a href="#instalacion">Instalación</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/tu-usuario/Bot-Discord" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZenShell Bot. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
